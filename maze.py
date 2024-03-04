@@ -132,7 +132,7 @@ def main():
             next_state = size * (y_pos // 50) + x_pos // 50
             print(f"Episode {episode} finished after {max_steps} steps")
         update_q_table(state, action, reward, next_state)
-        #print(q_table)
+        # print(q_table)
         state = next_state  
                         
     pygame.quit()
